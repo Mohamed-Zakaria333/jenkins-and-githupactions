@@ -7,6 +7,12 @@ pipeline {
             steps {
                 sh 'echo Hello Jenkins!'
             }
+        stage('test casc env') {
+            steps {
+                echo "JCasC env.hello: ${env.hello}"
+            }
+        }
+            
         }
     }
 }
